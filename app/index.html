@@ -3,23 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA VI trophy checklist</title>
+<title>Leonida Legend 3 — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 GTA VI trophies on PS5: step-by-step guides with sources, a roadmap to the platinum, missable flags and a spoiler shield.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>GTA VI trophy checklist</h1>
-  <p id="progress">0 of 55 earned</p>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Legend 3</h1>
+    <p class="tagline">The complete GTA VI trophy guide &amp; tracker — every trophy, every step, no spoilers until you want them.</p>
+    <div class="progress-wrap">
+      <div class="progress-line"><span id="progress-text">0 of 55 earned</span><span id="progress-pct">0%</span></div>
+      <div class="progress-bar" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0"><div id="progress-fill"></div></div>
+      <p class="grade-counts" id="grade-counts"></p>
+      <p class="platinum-est">Estimated time to platinum: &asymp; 120&ndash;150 hours (community estimate)</p>
+    </div>
+    <nav class="main-nav" aria-label="Views">
+      <a href="#/" data-nav="list">Trophies</a>
+      <a href="#/roadmap" data-nav="roadmap">Roadmap</a>
+      <a href="#/missables" data-nav="missables">Missables</a>
+    </nav>
+  </div>
 </header>
-<div class="controls">
-  <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
-  <button id="export" type="button">Export progress</button>
-  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
-</div>
-<table>
-  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>How to get it</th></tr></thead>
-  <tbody id="rows"></tbody>
-</table>
+<main id="view" aria-live="polite"></main>
+<footer>
+  <p>Leonida Legend 3 — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Rockstar Games; this guide uses no Rockstar artwork or logos. Trophy names, descriptions and grades are as PlayStation publishes them. Guides are original, with sources cited beside each one.</p>
+  <p><a href="https://make.fun/bounty/gta6-trophy-guide-01">Built for the make.fun GTA 6 trophy guide bounty</a></p>
+</footer>
 <script type="module" src="app.js"></script>
 </body>
 </html>
